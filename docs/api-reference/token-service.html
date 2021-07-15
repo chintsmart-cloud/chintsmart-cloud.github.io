@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>授权登陆接口 &mdash; 正泰智能云开发指南  文档</title>
+  <title>授权管理 &mdash; 正泰智能云开发指南  文档</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="验证码接口" href="user-service.html" />
-    <link rel="prev" title="API Reference" href="index.html" /> 
+    <link rel="next" title="用户管理" href="user-service.html" />
+    <link rel="prev" title="南美洲" href="../area-number/south-america.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,41 +85,37 @@
               
             
             
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">序言</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../common-parameters/index.html">公共参数说明</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><em>授权登陆接口</em></a></li>
+              <p class="caption"><span class="caption-text">公共参数说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
+</ul>
+<p class="caption"><span class="caption-text">错误码表</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../error-code/error-code.html">全局错误代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../error-code/http-code.html">HTTP状态码定义 (完全统一摘自HTTP)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">国际电话区号</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/africa.html">非洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/asia.html">亚洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/europe.html">欧洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">授权管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2"><em>授权登陆接口</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#token"><em>访问&amp;刷新token接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2"><em>飞燕平台-访问&amp;刷新token接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3"><em>天猫精灵-访问&amp;刷新token接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html"><em>验证码接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id4"><em>注册用户接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id5"><em>登录用户接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id6"><em>注销用户接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id7"><em>更新密码接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id8"><em>更新用户信息接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id9"><em>查询用户接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id10"><em>更新系统设置接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id11"><em>查询系统设置接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id12"><em>查询系统通知接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="user-service.html#id13"><em>飞燕平台-查询用户接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="product-service.html"><em>查询品类列表接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="product-service.html#id2"><em>查询产品列表接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="product-service.html#id3"><em>查询产品接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html"><em>查询用户绑定的设备列表接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id2"><em>绑定设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id3"><em>解绑设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id4"><em>更新设备信息接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id7"><em>查询设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id8"><em>更新设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id11"><em>删除设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id12"><em>查询设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="device-service.html#id13"><em>飞燕平台-设备数据实时接受</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3"><em>飞燕平台-访问&amp;刷新token接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4"><em>天猫精灵-访问&amp;刷新token接口</em></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../error-code/index.html">错误码表</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/index.html">国际电话区号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="device-service.html">设备管理</a></li>
 </ul>
 
             
@@ -168,9 +164,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">API Reference</a> &raquo;</li>
-        
-      <li><em>授权登陆接口</em></li>
+      <li>授权管理</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -188,7 +182,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1><em>授权登陆接口</em><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>授权管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2><em>授权登陆接口</em><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/token/login</span></code></p></li>
@@ -290,7 +286,7 @@
 </ul>
 </div>
 <div class="section" id="token">
-<h1><em>访问&amp;刷新token接口</em><a class="headerlink" href="#token" title="永久链接至标题">¶</a></h1>
+<h2><em>访问&amp;刷新token接口</em><a class="headerlink" href="#token" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/token/access</span></code></p></li>
@@ -317,102 +313,56 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-<col style="width: 79%" />
+<col style="width: 23%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 55%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head" colspan="3"><p>必 | 类 | 说明
-选 | 型 |</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>gran
-t_type</p></td>
-<td colspan="3"><dl>
-<dt>是 | s | 授权类型, <code class="docutils literal notranslate"><span class="pre">authorization_code</span></code> <code class="docutils literal notranslate"><span class="pre">refresh_token</span></code></dt><dd><div class="line-block">
-<div class="line">t |</div>
-<div class="line">r |</div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<tr class="row-even"><td><p>grant_type</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>授权类型, <code class="docutils literal notranslate"><span class="pre">authorization_code</span></code>
+<code class="docutils literal notranslate"><span class="pre">refresh_token</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>cli
-ent_id</p></td>
-<td colspan="3"><dl>
-<dt>是 | s | 注册应用的唯一id</dt><dd><div class="line-block">
-<div class="line">t |</div>
-<div class="line">r |</div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<tr class="row-odd"><td><p>client_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>注册应用的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>c
-<a href="#id4"><span class="problematic" id="id5">lient_</span></a>
-secret</p></td>
-<td colspan="3"><dl>
-<dt>是 | s | 注册应用的secret</dt><dd><div class="line-block">
-<div class="line">t |</div>
-<div class="line">r |</div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<tr class="row-even"><td><p>client_secret</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>注册应用的secret</p></td>
 </tr>
 <tr class="row-odd"><td><p>code</p></td>
-<td colspan="3"><dl>
-<dt>否 | s | 授权码, 当<code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为</dt><dd><div class="line-block">
-<div class="line">t | <code class="docutils literal notranslate"><span class="pre">authorization_code</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></div>
-<div class="line">r |</div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>授权码,
+<code class="docutils literal notranslate"><span class="pre">grant_type</span></code>为<code class="docutils literal notranslate"><span class="pre">a</span>
+<span class="pre">uthorization_code</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>redire
-ct_uri</p></td>
-<td colspan="3"><dl>
-<dt>否 | s | 回调地址, 当<code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为</dt><dd><div class="line-block">
-<div class="line">t | <code class="docutils literal notranslate"><span class="pre">authorization_code</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,</div>
-<div class="line">r | 如果没有可填写<code class="docutils literal notranslate"><span class="pre">none</span></code></div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<tr class="row-even"><td><p>redirect_uri</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>回调地址,
+<code class="docutils literal notranslate"><span class="pre">grant_type`</span>
+<span class="pre">`\</span> <span class="pre">为\</span> <span class="pre">``authorization_code</span></code>时
+<code class="docutils literal notranslate"><span class="pre">必填</span></code>,如没有可填写<code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>r
-efresh
-_token</p></td>
-<td colspan="3"><dl>
-<dt>否 | s | 进行刷新access_token的刷新token, 当<code class="docutils literal notranslate"><span class="pre">grant_type</span></code></dt><dd><div class="line-block">
-<div class="line">t | 为 <code class="docutils literal notranslate"><span class="pre">refresh_token</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></div>
-<div class="line">r |</div>
-<div class="line">i |</div>
-<div class="line">n |</div>
-<div class="line">g |</div>
-</div>
-</dd>
-</dl>
-</td>
+<tr class="row-odd"><td><p>refresh_token</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>进行刷新access_token的刷新token,
+<code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">refresh_token</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -463,8 +413,8 @@ _token</p></td>
 <li><p><code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h1><em>飞燕平台-访问&amp;刷新token接口</em><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id3">
+<h2><em>飞燕平台-访问&amp;刷新token接口</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/token/aliyun_living/access</span></code></p></li>
@@ -474,8 +424,8 @@ _token</p></td>
 <li><p><a class="reference external" href="https://living.aliyun.com/doc?spm=a2c56.196102.1029312.1.52f425c86lbmit#lnkvsd.html">飞燕平台-访问&amp;刷新token接口文档</a></p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h1><em>天猫精灵-访问&amp;刷新token接口</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id4">
+<h2><em>天猫精灵-访问&amp;刷新token接口</em><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/token/aliyun_tmall/access</span></code></p></li>
@@ -484,7 +434,7 @@ _token</p></td>
 <ul class="simple">
 <li><p><a class="reference external" href="http://doc-bot.tmall.com/docs/doc.htm?spm=0.7629140.0.0.21551780lgdTpH&amp;treeId=393&amp;articleId=106999&amp;docType=1">天猫精灵-访问&amp;刷新token接口文档</a></p></li>
 </ul>
-<hr class="docutils" />
+</div>
 </div>
 
 
@@ -493,8 +443,8 @@ _token</p></td>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="user-service.html" class="btn btn-neutral float-right" title="验证码接口" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../area-number/south-america.html" class="btn btn-neutral float-left" title="南美洲" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="user-service.html" class="btn btn-neutral float-right" title="用户管理" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
