@@ -616,8 +616,8 @@ vice_list.firmware_version</p></td>
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 12%" />
+<col style="width: 29%" />
+<col style="width: 9%" />
 <col style="width: 14%" />
 <col style="width: 48%" />
 </colgroup>
@@ -667,8 +667,7 @@ vice_list.firmware_version</p></td>
 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>f
-irmware_version</p></td>
+<tr class="row-even"><td><p>firmware_version</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
 <td><p>设备固件版本, 当
@@ -1235,9 +1234,9 @@ irmware_version</p></td>
 <p><strong>返回数据说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 41%" />
+<col style="width: 23%" />
 <col style="width: 14%" />
-<col style="width: 44%" />
+<col style="width: 64%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -1262,73 +1261,67 @@ irmware_version</p></td>
 <td><p>array</p></td>
 <td><p>记录列表</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.record_id</p></td>
+<tr class="row-even"><td><p>.record_id</p></td>
 <td><p>string</p></td>
 <td><p>当条记录的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.user_id</p></td>
+<tr class="row-odd"><td><p>.user_id</p></td>
 <td><p>string</p></td>
 <td><p>用户的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.device_id</p></td>
+<tr class="row-even"><td><p>.device_id</p></td>
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.device_name</p></td>
+<tr class="row-odd"><td><p>.device_name</p></td>
 <td><p>string</p></td>
 <td><p>设备名称</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.nick_name</p></td>
+<tr class="row-even"><td><p>.nick_name</p></td>
 <td><p>string</p></td>
 <td><p>设备昵称</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.level</p></td>
+<tr class="row-odd"><td><p>.level</p></td>
 <td><p>integer</p></td>
-<td><p>记录的严重等级,
-0:普通(info);
-1:警告(waring);
-3:严重(error);</p></td>
+<td><p>记录的严重等级, 0:普通(info);
+1:警告(waring); 3:严重(error);</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.title</p></td>
+<tr class="row-even"><td><p>.title</p></td>
 <td><p>string</p></td>
 <td><p>记录的命名</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.body</p></td>
+<tr class="row-odd"><td><p>.body</p></td>
 <td><p>string</p></td>
 <td><p>记录的具体内容</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.status</p></td>
+<tr class="row-even"><td><p>.status</p></td>
 <td><p>integer</p></td>
-<td><p>记录的状态, 0:全部;
-1:可用; 2:归档; 3:未读;
-4:已读</p></td>
+<td><p>记录的状态, 0:全部; 1:可用; 2:归档;
+3:未读; 4:已读</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.creator</p></td>
+<tr class="row-odd"><td><p>.creator</p></td>
 <td><p>string</p></td>
 <td><p>创建者id</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.modifier</p></td>
+<tr class="row-even"><td><p>.modifier</p></td>
 <td><p>string</p></td>
 <td><p>修改者id</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.gmt_create</p></td>
+<tr class="row-odd"><td><p>.gmt_create</p></td>
 <td><p>long</p></td>
 <td><p>创建时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.gmt_modified</p></td>
+<tr class="row-even"><td><p>.gmt_modified</p></td>
 <td><p>long</p></td>
 <td><p>修改时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list.category_id</p></td>
+<tr class="row-odd"><td><p>.category_id</p></td>
 <td><p>integer</p></td>
-<td><p>品类id,
-参考`
-<cite>公共参数说明-产品类型表`</cite></p></td>
+<td><p>品类id, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-产品类型表</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>record_list.vendor_type</p></td>
+<tr class="row-even"><td><p>.vendor_type</p></td>
 <td><p>integer</p></td>
-<td><p>设备厂商类型, 0:正泰自研;
-1:飞燕生态</p></td>
+<td><p>设备厂商类型, 0:正泰自研; 1:飞燕生态</p></td>
 </tr>
 </tbody>
 </table>
