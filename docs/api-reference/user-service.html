@@ -85,26 +85,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">公共参数说明</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
-</ul>
-<p class="caption"><span class="caption-text">错误码表</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../error-code/error-code.html">全局错误代码</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../error-code/http-code.html">HTTP状态码定义 (完全统一摘自HTTP)</a></li>
-</ul>
-<p class="caption"><span class="caption-text">国际电话区号</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/africa.html">非洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/asia.html">亚洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/europe.html">欧洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
-</ul>
-<p class="caption"><span class="caption-text">API Reference</span></p>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="token-service.html">授权管理</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">用户管理</a><ul>
@@ -123,6 +104,25 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="device-service.html">设备管理</a></li>
+</ul>
+<p class="caption"><span class="caption-text">公共参数说明</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
+</ul>
+<p class="caption"><span class="caption-text">错误码表</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../error-code/error-code.html">全局错误代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../error-code/http-code.html">HTTP状态码定义 (完全统一摘自HTTP)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">国际电话区号</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/africa.html">非洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/asia.html">亚洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/europe.html">欧洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
 </ul>
 
             
@@ -434,10 +434,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 9%" />
-<col style="width: 14%" />
-<col style="width: 56%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 65%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -455,8 +455,7 @@
 <tr class="row-odd"><td><p>login_model</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>登录方式, 0:手机号+密码;
-1:手机号+验证码</p></td>
+<td><p>登录方式, 0:手机号+密码; 1:手机号+验证码</p></td>
 </tr>
 <tr class="row-even"><td><p>area_code</p></td>
 <td><p>是</p></td>
@@ -471,16 +470,12 @@
 <tr class="row-even"><td><p>password</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户密码,
-当<code class="docutils literal notranslate"><span class="pre">logi</span>
-<span class="pre">n_model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户密码, 当 <code class="docutils literal notranslate"><span class="pre">login_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>auth_code</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>验证码,
-当<code class="docutils literal notranslate"><span class="pre">logi</span>
-<span class="pre">n_model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>验证码, 当 <code class="docutils literal notranslate"><span class="pre">login_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -664,23 +659,20 @@
 <tr class="row-even"><td><p>access_token</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>访问token,
-当<code class="docutils literal notranslate"><span class="pre">update</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>访问token, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>old_password</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>旧密码,
-当<code class="docutils literal notranslate"><span class="pre">update</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>旧密码, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>auth_code</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>验证码,
-当<code class="docutils literal notranslate"><span class="pre">update</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>验证码, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -754,23 +746,21 @@
 <tr class="row-even"><td><p>nick_name</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户昵称,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>为
-<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>avatar</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户头像http地址,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>为
-<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">2</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户头像http地址, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>identity_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户的身份ID,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>为
-<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">3</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户的身份ID, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -845,30 +835,27 @@
 <tr class="row-even"><td><p>user_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>注册应用或用户的唯一id,
-当<code class="docutils literal notranslate"><span class="pre">query</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>注册应用或用户的唯一id, 当
+<code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时
+<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>area_code</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>国际区号,
-当<code class="docutils literal notranslate"><span class="pre">query</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>国际区号, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>phone</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>手机号码,
-当<code class="docutils literal notranslate"><span class="pre">query</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>手机号码, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>identity_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户的身份ID,
-当<code class="docutils literal notranslate"><span class="pre">query</span>
-<span class="pre">_model</span></code>为<code class="docutils literal notranslate"><span class="pre">2</span></code>时<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户的身份ID, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -1015,9 +1002,9 @@
 <tr class="row-even"><td><p>message_config</p></td>
 <td><p>否</p></td>
 <td><p>object</p></td>
-<td><p>系统消息配置对象,
-当<code class="docutils literal notranslate"><span class="pre">config_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时为
+<td><p>系统消息配置对象, 当
+<code class="docutils literal notranslate"><span class="pre">config_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时为
 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>.recv_sys_notice</p></td>

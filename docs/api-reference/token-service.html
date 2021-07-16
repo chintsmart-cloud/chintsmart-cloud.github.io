@@ -40,7 +40,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="用户管理" href="user-service.html" />
-    <link rel="prev" title="南美洲" href="../area-number/south-america.html" /> 
+    <link rel="prev" title="正泰智能云开发指南" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,7 +85,20 @@
               
             
             
-              <p class="caption"><span class="caption-text">公共参数说明</span></p>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">授权管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2"><em>授权登陆接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#token"><em>访问&amp;刷新token接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3"><em>飞燕平台-访问&amp;刷新token接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4"><em>天猫精灵-访问&amp;刷新token接口</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="device-service.html">设备管理</a></li>
+</ul>
+<p class="caption"><span class="caption-text">公共参数说明</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
@@ -103,19 +116,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
-</ul>
-<p class="caption"><span class="caption-text">API Reference</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">授权管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2"><em>授权登陆接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#token"><em>访问&amp;刷新token接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3"><em>飞燕平台-访问&amp;刷新token接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"><em>天猫精灵-访问&amp;刷新token接口</em></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="device-service.html">设备管理</a></li>
 </ul>
 
             
@@ -345,24 +345,23 @@
 <tr class="row-odd"><td><p>code</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>授权码,
-<code class="docutils literal notranslate"><span class="pre">grant_type</span></code>为<code class="docutils literal notranslate"><span class="pre">a</span>
-<span class="pre">uthorization_code</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>授权码, 当 <code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">authorization_code</span></code> 时
+<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>redirect_uri</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>回调地址,
-<code class="docutils literal notranslate"><span class="pre">grant_type`</span>
-<span class="pre">`\</span> <span class="pre">为\</span> <span class="pre">``authorization_code</span></code>时
-<code class="docutils literal notranslate"><span class="pre">必填</span></code>,如没有可填写<code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
+<td><p>回调地址, 当 <code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">authorization_code</span></code> 时
+<code class="docutils literal notranslate"><span class="pre">必填</span></code>, 如果没有可填写 <code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>refresh_token</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
 <td><p>进行刷新access_token的刷新token,
-<code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">refresh_token</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+当 <code class="docutils literal notranslate"><span class="pre">grant_type</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">refresh_token</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -443,7 +442,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../area-number/south-america.html" class="btn btn-neutral float-left" title="南美洲" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="正泰智能云开发指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="user-service.html" class="btn btn-neutral float-right" title="用户管理" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

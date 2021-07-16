@@ -39,6 +39,7 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="参数列表" href="../common-parameters/param-list.html" />
     <link rel="prev" title="产品管理" href="product-service.html" /> 
 </head>
 
@@ -84,7 +85,25 @@
               
             
             
-              <p class="caption"><span class="caption-text">公共参数说明</span></p>
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="token-service.html">授权管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">设备管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2"><em>查询用户绑定的设备列表接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3"><em>绑定设备接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4"><em>解绑设备接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5"><em>更新设备信息接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6"><em>查询设备接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7"><em>更新设备记录接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8"><em>删除设备记录接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9"><em>查询设备记录接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10"><em>飞燕平台-设备数据实时接受</em></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">公共参数说明</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
@@ -102,24 +121,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
-</ul>
-<p class="caption"><span class="caption-text">API Reference</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="token-service.html">授权管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">设备管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2"><em>查询用户绑定的设备列表接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3"><em>绑定设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"><em>解绑设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5"><em>更新设备信息接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6"><em>查询设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7"><em>更新设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8"><em>删除设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9"><em>查询设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10"><em>飞燕平台-设备数据实时接受</em></a></li>
-</ul>
-</li>
 </ul>
 
             
@@ -616,141 +617,90 @@ vice_list.firmware_version</p></td>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
-<col style="width: 4%" />
-<col style="width: 13%" />
-<col style="width: 56%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 48%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head" colspan="2"><p>必 | 类型
-选 |</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
 <th class="head"><p>说明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>access_token</p></td>
-<td colspan="2"><p>是 | string</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
 <td><p>访问token</p></td>
 </tr>
 <tr class="row-odd"><td><p>device_id</p></td>
-<td colspan="2"><p>是 | string</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
 <tr class="row-even"><td><p>update_model</p></td>
-<td colspan="3"><dl>
-<dt>是 | integer | 更新设备方式, 0:全部信息;</dt><dd><div class="line-block">
-<div class="line">| 1:设备密钥; 2:设备名称;</div>
-<div class="line">| 3:设备序列号; 4:固件版本;</div>
-<div class="line">| 5:物理地址; 6:网络地址; 7:设备昵称;</div>
-<div class="line">| 8:具体属性</div>
-</div>
-</dd>
-</dl>
-</td>
+<td><p>是</p></td>
+<td><p>integer</p></td>
+<td><p>更新设备方式, 0:全部信息;
+1:设备密钥; 2:设备名称;
+3:设备序列号; 4:固件版本;
+5:物理地址; 6:网络地址;
+7:设备昵称; 8:具体属性</p></td>
 </tr>
 <tr class="row-odd"><td><p>device_secret</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备密钥,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备密钥, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>device_name</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备名称,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">2</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备名称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>sn</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备序列号,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">3</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备序列号, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>firmware_version</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备固件版本,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">4</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<tr class="row-even"><td><p>f
+irmware_version</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">4</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>mac_addr</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备物理地址,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">5</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备物理地址, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">5</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>net_addr</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备网络地址,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">6</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">6</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>nick_name</p></td>
-<td colspan="2"><dl>
-<dt>否 | string</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>设备昵称,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">7</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">7</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>properties</p></td>
-<td colspan="2"><dl>
-<dt>否 | object</dt><dd><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</dd>
-</dl>
-</td>
-<td><p>具体属性对象,
-当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为<code class="docutils literal notranslate"><span class="pre">0</span></code>或<code class="docutils literal notranslate"><span class="pre">8</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>否</p></td>
+<td><p>object</p></td>
+<td><p>具体属性对象, 当
+<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
+<code class="docutils literal notranslate"><span class="pre">8</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -822,16 +772,14 @@ vice_list.firmware_version</p></td>
 <tr class="row-even"><td><p>device_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>当<code class="docutils literal notranslate"><span class="pre">query_</span>
-<span class="pre">model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
-设备的唯一id</p></td>
+<td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>device_key</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>当<code class="docutils literal notranslate"><span class="pre">query_</span>
-<span class="pre">model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
-设备key</p></td>
+<td><p>设备key, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -988,9 +936,9 @@ vice_list.firmware_version</p></td>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 23%" />
-<col style="width: 14%" />
+<col style="width: 18%" />
 <col style="width: 15%" />
-<col style="width: 48%" />
+<col style="width: 44%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -1019,18 +967,21 @@ vice_list.firmware_version</p></td>
 <tr class="row-odd"><td><p>level</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>为`
-<cite>0`</cite>或<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
-记录的严重等级, 0:普通(info);
-1:警告(waring); 2:严重(fatal);</p></td>
+<td><p>当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code>
+, 记录的严重等级,
+0:普通(info);
+1:警告(waring);
+2:严重(fatal);</p></td>
 </tr>
 <tr class="row-even"><td><p>status</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>当<code class="docutils literal notranslate"><span class="pre">update_model</span></code>为`
-<cite>0`</cite>或<code class="docutils literal notranslate"><span class="pre">2</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
-记录的状态, 0:全部; 1:可用;
-2:归档; 3:未读; 4:已读</p></td>
+<td><p>当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code>
+, 记录的状态, 0:全部;
+1:可用; 2:归档; 3:未读;
+4:已读</p></td>
 </tr>
 </tbody>
 </table>
@@ -1099,7 +1050,7 @@ vice_list.firmware_version</p></td>
 <tr class="row-odd"><td><p>record_id_list</p></td>
 <td><p>是</p></td>
 <td><p>array</p></td>
-<td><p>记录id列表, 单次最多<code class="docutils literal notranslate"><span class="pre">100</span></code>条</p></td>
+<td><p>记录id列表, 单次最多  <code class="docutils literal notranslate"><span class="pre">100</span></code>  条</p></td>
 </tr>
 </tbody>
 </table>
@@ -1207,32 +1158,28 @@ vice_list.firmware_version</p></td>
 <tr class="row-odd"><td><p>device_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>设备的唯一id,
-当<code class="docutils literal notranslate"><span class="pre">query_</span>
-<span class="pre">model</span></code>为<code class="docutils literal notranslate"><span class="pre">0</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>user_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>注册应用或用户的唯一id,
-当<code class="docutils literal notranslate"><span class="pre">query_</span>
-<span class="pre">model</span></code>为<code class="docutils literal notranslate"><span class="pre">1</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>注册应用或用户的唯一id, 当
+<code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时
+<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>category_id</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>品类id,
-当<code class="docutils literal notranslate"><span class="pre">query_m</span>
-<span class="pre">odel</span></code>为<code class="docutils literal notranslate"><span class="pre">2</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
-参
-考<code class="docutils literal notranslate"><span class="pre">公共参数说明-产品类型表</span></code></p></td>
+<td><p>品类id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
+<code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code> , 参考
+<code class="docutils literal notranslate"><span class="pre">公共参数说明-产品类型表</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>vendor_type</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>设备厂商类型,
-当<code class="docutils literal notranslate"><span class="pre">query_m</span>
-<span class="pre">odel</span></code>为<code class="docutils literal notranslate"><span class="pre">3</span></code>时<code class="docutils literal notranslate"><span class="pre">必填</span></code>,
+<td><p>当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时
+<code class="docutils literal notranslate"><span class="pre">必填</span></code> , 设备厂商类型,
 0:正泰自研; 1:飞燕生态</p></td>
 </tr>
 </tbody>
@@ -1410,6 +1357,7 @@ vice_list.firmware_version</p></td>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="product-service.html" class="btn btn-neutral float-left" title="产品管理" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../common-parameters/param-list.html" class="btn btn-neutral float-right" title="参数列表" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
