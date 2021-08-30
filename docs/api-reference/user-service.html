@@ -98,7 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id8"><em>查询用户接口</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id9"><em>更新系统设置接口</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id10"><em>查询系统设置接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11"><em>查询系统通知接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11"><em>查询系统通知接口（暂时废弃）</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id12"><em>飞燕平台-查询用户接口</em></a></li>
 </ul>
 </li>
@@ -480,7 +480,11 @@
         <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
         <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;gmt_last_login&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;正泰大管家&quot;</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;正泰大管家&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ssid&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;pw&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+        <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -514,6 +518,18 @@
 <tr class="row-odd"><td><p>nick_name</p></td>
 <td><p>string</p></td>
 <td><p>用户昵称</p></td>
+</tr>
+<tr class="row-even"><td><p>network</p></td>
+<td><p>object</p></td>
+<td><p>用户网络信息</p></td>
+</tr>
+<tr class="row-odd"><td><p>.ssid</p></td>
+<td><p>string</p></td>
+<td><p>网络id</p></td>
+</tr>
+<tr class="row-even"><td><p>.pw</p></td>
+<td><p>string</p></td>
+<td><p>网络密码</p></td>
 </tr>
 </tbody>
 </table>
@@ -701,10 +717,13 @@
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;update_model&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;正泰大管家&quot;</span><span class="p">,</span>
         <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;https:/www.a.com/1.jpg&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;identity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5082opabf5192fb1ae453eced9806fbdae6f6093&quot;</span>
+        <span class="nt">&quot;identity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5082opabf5192fb1ae453eced9806fbdae6f6093&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ssid&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;pw&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span>
+        <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -712,10 +731,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 9%" />
+<col style="width: 30%" />
 <col style="width: 13%" />
-<col style="width: 57%" />
+<col style="width: 17%" />
+<col style="width: 39%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -730,30 +749,35 @@
 <td><p>string</p></td>
 <td><p>访问token</p></td>
 </tr>
-<tr class="row-odd"><td><p>update_model</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>信息更新方式, 0:全部; 1:昵称;
-2:头像; 3:身份id</p></td>
-</tr>
-<tr class="row-even"><td><p>nick_name</p></td>
+<tr class="row-odd"><td><p>nick_name</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户昵称</p></td>
 </tr>
-<tr class="row-odd"><td><p>avatar</p></td>
+<tr class="row-even"><td><p>avatar</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>用户头像http地址, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>用户头像http地址</p></td>
 </tr>
-<tr class="row-even"><td><p>identity_id</p></td>
+<tr class="row-odd"><td><p>identity_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>飞燕用户的身份ID, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>飞燕用户的身份ID</p></td>
+</tr>
+<tr class="row-even"><td><p>network</p></td>
+<td><p>否</p></td>
+<td><p>object</p></td>
+<td><p>用户网络信息</p></td>
+</tr>
+<tr class="row-odd"><td><p>.ssid</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>网络id</p></td>
+</tr>
+<tr class="row-even"><td><p>.pw</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>网络密码</p></td>
 </tr>
 </tbody>
 </table>
@@ -864,6 +888,10 @@
         <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;正泰大管家&quot;</span><span class="p">,</span>
         <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;https:/www.a.com/1.jpg&quot;</span><span class="p">,</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ssid&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;pw&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span>
+        <span class="p">},</span>
         <span class="nt">&quot;gmt_register&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
         <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
         <span class="nt">&quot;gmt_last_login&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
@@ -915,19 +943,31 @@
 <td><p>用户状态, 0:未激活; 1:在线; 2:离线;
 3:禁用; 4:已激活</p></td>
 </tr>
-<tr class="row-odd"><td><p>gmt_register</p></td>
+<tr class="row-odd"><td><p>network</p></td>
+<td><p>object</p></td>
+<td><p>用户网络信息</p></td>
+</tr>
+<tr class="row-even"><td><p>.ssid</p></td>
+<td><p>string</p></td>
+<td><p>网络id</p></td>
+</tr>
+<tr class="row-odd"><td><p>.pw</p></td>
+<td><p>string</p></td>
+<td><p>网络密码</p></td>
+</tr>
+<tr class="row-even"><td><p>gmt_register</p></td>
 <td><p>long</p></td>
 <td><p>注册时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-even"><td><p>gmt_modified</p></td>
+<tr class="row-odd"><td><p>gmt_modified</p></td>
 <td><p>long</p></td>
 <td><p>修改时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-odd"><td><p>gmt_last_login</p></td>
+<tr class="row-even"><td><p>gmt_last_login</p></td>
 <td><p>long</p></td>
 <td><p>上一次登陆时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-even"><td><p>gmt_logout</p></td>
+<tr class="row-odd"><td><p>gmt_logout</p></td>
 <td><p>long</p></td>
 <td><p>注销时间戳(毫秒)</p></td>
 </tr>
@@ -953,7 +993,6 @@
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;config_model&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&quot;message_config&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;recv_sys_notice&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
             <span class="nt">&quot;recv_device_notice&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -968,9 +1007,9 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 35%" />
+<col style="width: 36%" />
 <col style="width: 10%" />
-<col style="width: 15%" />
+<col style="width: 14%" />
 <col style="width: 40%" />
 </colgroup>
 <thead>
@@ -986,44 +1025,35 @@
 <td><p>string</p></td>
 <td><p>访问token</p></td>
 </tr>
-<tr class="row-odd"><td><p>config_model</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>设置方式, 0:全部设置;
-1:消息设置</p></td>
-</tr>
-<tr class="row-even"><td><p>message_config</p></td>
+<tr class="row-odd"><td><p>message_config</p></td>
 <td><p>否</p></td>
 <td><p>object</p></td>
-<td><p>系统消息配置对象, 当
-<code class="docutils literal notranslate"><span class="pre">config_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时为
-<code class="docutils literal notranslate"><span class="pre">必选</span></code></p></td>
+<td><p>系统消息配置对象</p></td>
 </tr>
-<tr class="row-odd"><td><p>.recv_sys_notice</p></td>
+<tr class="row-even"><td><p>.recv_sys_notice</p></td>
 <td><p>是</p></td>
 <td><p>bool</p></td>
 <td><p>接收系统通知的开关,
 true:打开; false:关闭</p></td>
 </tr>
-<tr class="row-even"><td><p>.recv_device_notice</p></td>
+<tr class="row-odd"><td><p>.recv_device_notice</p></td>
 <td><p>是</p></td>
 <td><p>bool</p></td>
 <td><p>接收设备通知的开关,
 true:打开; false:关闭</p></td>
 </tr>
-<tr class="row-odd"><td><p>.no_disturbing</p></td>
+<tr class="row-even"><td><p>.no_disturbing</p></td>
 <td><p>是</p></td>
 <td><p>bool</p></td>
 <td><p>免打扰的开关,
 true:打开; false:关闭</p></td>
 </tr>
-<tr class="row-even"><td><p>.start</p></td>
+<tr class="row-odd"><td><p>.start</p></td>
 <td><p>是</p></td>
 <td><p>long</p></td>
 <td><p>免打扰开始时间戳</p></td>
 </tr>
-<tr class="row-odd"><td><p>.end</p></td>
+<tr class="row-even"><td><p>.end</p></td>
 <td><p>是</p></td>
 <td><p>long</p></td>
 <td><p>免打扰结束时间戳</p></td>
@@ -1178,7 +1208,7 @@ true:打开; false:关闭</p></td>
 </ul>
 </div>
 <div class="section" id="id11">
-<h2><em>查询系统通知接口</em><a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+<h2><em>查询系统通知接口（暂时废弃）</em><a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/user/query_sys_notice</span></code></p></li>
