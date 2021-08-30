@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>物模型 &mdash; 正泰智能云开发指南  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="参数列表" href="param-list.html" />
+    <link rel="prev" title="（通知）" href="../api-reference/message-service/notice.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> 正泰智能云开发指南
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/token-service.html">授权服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/user-service.html">用户服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/product-service.html">产品服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/device-service.html">设备服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/message-service/index.html">消息服务</a></li>
+</ul>
+<p class="caption"><span class="caption-text">公共参数说明</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">物模型</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">品类表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3"><em>0 开关</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4"><em>1 插座</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="param-list.html">参数列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code-dict.html">错误码字典</a></li>
+<li class="toctree-l1"><a class="reference internal" href="area-number.html">国际区号编码</a></li>
+</ul>
+<p class="caption"><span class="caption-text">其他</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../change-log.html">CHANGE LOGS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">正泰智能云开发指南</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>物模型</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>物模型<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>一般泛指 <code class="docutils literal notranslate"><span class="pre">properties</span></code> 对象, 具体字段见下面的json</p>
+<div class="section" id="id2">
+<h2>品类表<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>category_id</p></th>
+<th class="head"><p>支持的品类</p></th>
+<th class="head"><p>品类说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>开关</p></td>
+<td><p>switch</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>插座</p></td>
+<td><p>outlet</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>传感器</p></td>
+<td><p>sensor</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>网关</p></td>
+<td><p>gateway</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>指纹锁</p></td>
+<td><p>fingerprintlock</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>灯</p></td>
+<td><p>light</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>窗帘</p></td>
+<td><p>curtain</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>摄像头</p></td>
+<td><p>camera</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>万能遥控器</p></td>
+<td><p>telecontroller</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>智能门控(门锁)</p></td>
+<td><p>smart-gating</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>晾衣架</p></td>
+<td><p>hanger</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2><em>0 开关</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p><strong>请求示例</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+    &quot;category_id&quot;: 0,
+    &quot;properties&quot;: {
+        // no required 进入睡眠等待时间
+        &quot;enterSleepAfterTime&quot;: {
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;65535&quot;
+            // &quot;unitName&quot;: &quot;秒&quot;,
+            // &quot;step&quot;: &quot;1&quot;,
+            // &quot;defaultValue&quot;: &quot;0&quot;
+        },
+
+        // no required 开关
+        &quot;powerstate&quot;: true,
+
+        // no required 激活设备唤醒时间
+        &quot;activeWakeupTime&quot;: {
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;65535&quot;,
+            // &quot;unit&quot;: &quot;s&quot;,
+            // &quot;unitName&quot;: &quot;秒&quot;,
+            // &quot;step&quot;: &quot;1&quot;,
+            // &quot;defaultValue&quot;: &quot;5&quot;
+        },
+
+        // no required 设备端上定时
+        &quot;device_timer&quot;: {
+            // 定时开始时间
+            &quot;timer&quot;: &quot;&quot;,
+            &quot;enable&quot;: true,
+            // 定时执行的操作
+            &quot;targets&quot;: &quot;&quot;,
+            &quot;time_zone&quot;: {
+                &quot;min&quot;: &quot;-43200&quot;,
+                &quot;max&quot;: &quot;50400&quot;,
+                &quot;unit&quot;: &quot;s&quot;,
+                &quot;unitName&quot;: &quot;秒&quot;,
+                &quot;step&quot;: &quot;1&quot;,
+                &quot;defaultValue&quot;: &quot;0&quot;
+            },
+            // &quot;0&quot;: &quot;未配置&quot;,
+            // &quot;1&quot;: &quot;倒计时&quot;,
+            // &quot;2&quot;: &quot;普通定时&quot;,
+            // &quot;3&quot;: &quot;周期循环定时&quot;,
+            // &quot;4&quot;: &quot;随机定时&quot;
+            &quot;type&quot;: 0,
+            &quot;end_time&quot;: &quot;&quot;,
+            &quot;run_time&quot;: {
+                &quot;min&quot;: &quot;0&quot;,
+                &quot;max&quot;: &quot;1440&quot;,
+                &quot;unit&quot;: &quot;m&quot;,
+                &quot;unitName&quot;: &quot;分钟&quot;,
+                &quot;step&quot;: &quot;1&quot;,
+                &quot;defaultValue&quot;: &quot;0&quot;
+            },
+            &quot;sleep_time&quot;: {
+                &quot;min&quot;: &quot;0&quot;,
+                &quot;max&quot;: &quot;1440&quot;,
+                &quot;unit&quot;: &quot;m&quot;,
+                &quot;unitName&quot;: &quot;分钟&quot;,
+                &quot;step&quot;: &quot;1&quot;,
+                &quot;defaultValue&quot;: &quot;0&quot;
+            }
+        },
+
+        // no required 模式
+        // &quot;3&quot;: &quot;阅读模式&quot;,
+        // &quot;8&quot;: &quot;起床模式&quot;,
+        // &quot;230&quot;: &quot;节能模式&quot;,
+        // &quot;378&quot;: &quot;休闲模式&quot;,
+        // &quot;395&quot;: &quot;会客模式&quot;,
+        // &quot;751&quot;: &quot;全开模式&quot;,
+        // &quot;982&quot;: &quot;回家模式&quot;,
+        // &quot;983&quot;: &quot;离家模式&quot;,
+        // &quot;984&quot;: &quot;安防模式&quot;,
+        // &quot;985&quot;: &quot;解除安防&quot;
+        &quot;mode&quot;: 3,
+
+        // no required 发射功率
+        &quot;transmissionPower&quot;: {
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;100&quot;,
+            &quot;unit&quot;: &quot;none&quot;,
+            &quot;unitName&quot;: &quot;无&quot;,
+            &quot;step&quot;: &quot;1&quot;,
+            &quot;defaultValue&quot;: &quot;0&quot;
+        }
+
+
+
+    }
+}
+</pre></div>
+</div>
+<p><strong>请求参数说明</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>访问token</p></td>
+</tr>
+<tr class="row-odd"><td><p>device_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备的唯一id</p></td>
+</tr>
+<tr class="row-even"><td><p>device_secret</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备密钥</p></td>
+</tr>
+<tr class="row-odd"><td><p>mac_addr</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备物理地址</p></td>
+</tr>
+<tr class="row-even"><td><p>sdk_version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>SDK版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>firmware_version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本</p></td>
+</tr>
+<tr class="row-even"><td><p>nick_name</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备昵称</p></td>
+</tr>
+<tr class="row-odd"><td><p>net_addr</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>是</p></td>
+<td><p>integer</p></td>
+<td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
+</tr>
+<tr class="row-odd"><td><p>group_id</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，如家ID、房间ID等</p></td>
+</tr>
+<tr class="row-even"><td><p>is_sub_device</p></td>
+<td><p>否</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
+</tr>
+<tr class="row-odd"><td><p>owned</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
+</tr>
+<tr class="row-even"><td><p>product_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>产品的唯一id</p></td>
+</tr>
+<tr class="row-odd"><td><p>category_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2><em>1 插座</em><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p><strong>请求示例</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;PowerSwitch&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;TotalConsumption&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;RMSCurrent&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;RMSVoltage&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CountDown&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;IsRunning&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;TimeLeft&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;max&quot;</span><span class="p">:</span> <span class="mi">86399</span><span class="p">,</span>
+                <span class="nt">&quot;PowerSwitch&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;Timestamp&quot;</span><span class="p">:</span> <span class="mi">0</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>请求参数说明</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>访问token</p></td>
+</tr>
+<tr class="row-odd"><td><p>device_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备的唯一id</p></td>
+</tr>
+<tr class="row-even"><td><p>device_secret</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备密钥</p></td>
+</tr>
+<tr class="row-odd"><td><p>mac_addr</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备物理地址</p></td>
+</tr>
+<tr class="row-even"><td><p>sdk_version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>SDK版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>firmware_version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本</p></td>
+</tr>
+<tr class="row-even"><td><p>nick_name</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备昵称</p></td>
+</tr>
+<tr class="row-odd"><td><p>net_addr</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>是</p></td>
+<td><p>integer</p></td>
+<td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
+</tr>
+<tr class="row-odd"><td><p>group_id</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，如家ID、房间ID等</p></td>
+</tr>
+<tr class="row-even"><td><p>is_sub_device</p></td>
+<td><p>否</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
+</tr>
+<tr class="row-odd"><td><p>owned</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
+</tr>
+<tr class="row-even"><td><p>product_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>产品的唯一id</p></td>
+</tr>
+<tr class="row-odd"><td><p>category_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../api-reference/message-service/notice.html" class="btn btn-neutral float-left" title="（通知）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="param-list.html" class="btn btn-neutral float-right" title="参数列表" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2021, Mason Lee.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>设备管理 &mdash; 正泰智能云开发指南  文档</title>
+  <title>设备服务 &mdash; 正泰智能云开发指南  文档</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="参数列表" href="../common-parameters/param-list.html" />
-    <link rel="prev" title="产品管理" href="product-service.html" /> 
+    <link rel="next" title="消息服务" href="message-service/index.html" />
+    <link rel="prev" title="产品服务" href="product-service.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,40 +87,31 @@
             
               <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="token-service.html">授权管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户管理</a></li>
-<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品管理</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">设备管理</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2"><em>查询用户绑定的设备列表接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3"><em>绑定设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"><em>解绑设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5"><em>更新设备信息接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6"><em>查询设备接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7"><em>更新设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8"><em>删除设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9"><em>查询设备记录接口</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10"><em>飞燕平台-设备数据实时接受</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="token-service.html">授权服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-service.html">用户服务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="product-service.html">产品服务</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">设备服务</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2"><em>绑定设备接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3"><em>查询用户绑定的设备列表接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4"><em>更新设备基本信息接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5"><em>查询设备接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6"><em>查询设备状态接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7"><em>查询设备事件接口</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8"><em>飞燕平台-设备数据实时接受</em></a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="message-service/index.html">消息服务</a></li>
 </ul>
 <p class="caption"><span class="caption-text">公共参数说明</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/things-model.html">物模型</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common-parameters/param-list.html">参数列表</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../common-parameters/product-type.html">产品类型表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/code-dict.html">错误码字典</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-parameters/area-number.html">国际区号编码</a></li>
 </ul>
-<p class="caption"><span class="caption-text">错误码表</span></p>
+<p class="caption"><span class="caption-text">其他</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../error-code/error-code.html">全局错误代码</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../error-code/http-code.html">HTTP状态码定义 (完全统一摘自HTTP)</a></li>
-</ul>
-<p class="caption"><span class="caption-text">国际电话区号</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/africa.html">非洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/asia.html">亚洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/europe.html">欧洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/north-america.html">北美洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/oceania.html">大洋洲</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../area-number/south-america.html">南美洲</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../change-log.html">CHANGE LOGS</a></li>
 </ul>
 
             
@@ -169,7 +160,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>设备管理</li>
+      <li>设备服务</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -187,9 +178,148 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>设备管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>设备服务<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id2">
-<h2><em>查询用户绑定的设备列表接口</em><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2><em>绑定设备接口</em><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p><strong>请求URL：</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/bind</span></code></p></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul class="simple">
+<li><p>POST</p></li>
+</ul>
+<p><strong>请求示例</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;product_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>请求参数说明</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>访问token</p></td>
+</tr>
+<tr class="row-odd"><td><p>device_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备的唯一id</p></td>
+</tr>
+<tr class="row-even"><td><p>device_secret</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备密钥</p></td>
+</tr>
+<tr class="row-odd"><td><p>mac_addr</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备物理地址</p></td>
+</tr>
+<tr class="row-even"><td><p>sdk_version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>SDK版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>version</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本</p></td>
+</tr>
+<tr class="row-even"><td><p>nick_name</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备昵称</p></td>
+</tr>
+<tr class="row-odd"><td><p>net_addr</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>是</p></td>
+<td><p>integer</p></td>
+<td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
+</tr>
+<tr class="row-odd"><td><p>group_id</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>空间编号，如家ID、房间ID等</p></td>
+</tr>
+<tr class="row-even"><td><p>is_sub_device</p></td>
+<td><p>否</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
+</tr>
+<tr class="row-odd"><td><p>owned</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
+</tr>
+<tr class="row-even"><td><p>product_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>产品的唯一id</p></td>
+</tr>
+<tr class="row-odd"><td><p>category_id</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>返回数据说明</strong></p>
+<ul class="simple">
+<li><p>空值</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><em>查询用户绑定的设备列表接口</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/query_by_user</span></code></p></li>
@@ -201,11 +331,14 @@
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
         <span class="nt">&quot;page_no&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">10</span>
+        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -213,10 +346,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 27%" />
+<col style="width: 15%" />
+<col style="width: 6%" />
 <col style="width: 9%" />
-<col style="width: 16%" />
-<col style="width: 49%" />
+<col style="width: 70%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -239,76 +372,74 @@
 <tr class="row-even"><td><p>page_no</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>当前页号</p></td>
+<td><p>当前页号, 从1开始</p></td>
 </tr>
 <tr class="row-odd"><td><p>page_size</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>页大小</p></td>
+<td><p>分页大小，大于等于1，小于等于100</p></td>
+</tr>
+<tr class="row-even"><td><p>owned</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
+</tr>
+<tr class="row-odd"><td><p>group_id</p></td>
+<td><p>否</p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，如家ID、房间ID等</p></td>
+</tr>
+<tr class="row-even"><td><p>is_sub_device</p></td>
+<td><p>否</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>返回示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
         <span class="nt">&quot;page_no&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
         <span class="nt">&quot;identity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5082opabf5192fb1ae453eced9806fbdae6f6093&quot;</span><span class="p">,</span>
         <span class="nt">&quot;device_list&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;sn&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;firmware_version&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
                 <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;modifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
+                <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
                 <span class="nt">&quot;product_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;product_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;product_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;vendor_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;net_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;product_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;https:/www.a.com/1.jpg&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;popular&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+                <span class="nt">&quot;gmt_bind&quot;</span><span class="p">:</span> <span class="mi">149968121600</span>
             <span class="p">},</span>
             <span class="p">{</span>
                 <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;sn&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;firmware_version&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
                 <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;modifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
+                <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
                 <span class="nt">&quot;product_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;product_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;product_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;vendor_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;net_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;product_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;https:/www.a.com/1.jpg&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;popular&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span>
+                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+                <span class="nt">&quot;gmt_bind&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span>
             <span class="p">}</span>
         <span class="p">]</span>
     <span class="p">}</span>
@@ -318,9 +449,9 @@
 <p><strong>返回数据说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 43%" />
-<col style="width: 14%" />
-<col style="width: 43%" />
+<col style="width: 17%" />
+<col style="width: 10%" />
+<col style="width: 73%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -335,11 +466,11 @@
 </tr>
 <tr class="row-odd"><td><p>page_no</p></td>
 <td><p>integer</p></td>
-<td><p>当前页号</p></td>
+<td><p>当前页号, 从1开始</p></td>
 </tr>
 <tr class="row-even"><td><p>page_size</p></td>
 <td><p>integer</p></td>
-<td><p>页大小</p></td>
+<td><p>分页大小，大于等于1，小于等于100</p></td>
 </tr>
 <tr class="row-odd"><td><p>identity_id</p></td>
 <td><p>string</p></td>
@@ -353,176 +484,79 @@
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>.device_key</p></td>
-<td><p>string</p></td>
-<td><p>设备key</p></td>
-</tr>
-<tr class="row-odd"><td><p>.device_secret</p></td>
+<tr class="row-even"><td><p>.device_secret</p></td>
 <td><p>string</p></td>
 <td><p>设备密钥</p></td>
-</tr>
-<tr class="row-even"><td><p>.device_name</p></td>
-<td><p>string</p></td>
-<td><p>设备名称</p></td>
-</tr>
-<tr class="row-odd"><td><p>.sn</p></td>
-<td><p>string</p></td>
-<td><p>设备序列号</p></td>
-</tr>
-<tr class="row-even"><td><p>.firmware_version</p></td>
-<td><p>string</p></td>
-<td><p>设备固件版本</p></td>
 </tr>
 <tr class="row-odd"><td><p>.mac_addr</p></td>
 <td><p>string</p></td>
 <td><p>设备物理地址</p></td>
 </tr>
-<tr class="row-even"><td><p>.net_addr</p></td>
+<tr class="row-even"><td><p>.sdk_version</p></td>
 <td><p>string</p></td>
-<td><p>设备网络地址</p></td>
+<td><p>SDK版本</p></td>
 </tr>
-<tr class="row-odd"><td><p>.nick_name</p></td>
+<tr class="row-odd"><td><p>.version</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本</p></td>
+</tr>
+<tr class="row-even"><td><p>.nick_name</p></td>
 <td><p>string</p></td>
 <td><p>设备昵称</p></td>
 </tr>
-<tr class="row-even"><td><p>.properties</p></td>
-<td><p>object</p></td>
-<td><p>具体属性对象</p></td>
+<tr class="row-odd"><td><p>.net_addr</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址</p></td>
 </tr>
-<tr class="row-odd"><td><p>.status</p></td>
+<tr class="row-even"><td><p>.status</p></td>
 <td><p>integer</p></td>
 <td><p>设备状态, 0:未激活;
 1:在线; 2:离线; 3:禁用;
 4:已激活</p></td>
 </tr>
-<tr class="row-even"><td><p>.creator</p></td>
-<td><p>string</p></td>
-<td><p>创建者id</p></td>
-</tr>
-<tr class="row-odd"><td><p>.modifier</p></td>
-<td><p>string</p></td>
-<td><p>修改者id</p></td>
-</tr>
-<tr class="row-even"><td><p>.gmt_create</p></td>
-<td><p>long</p></td>
-<td><p>创建时间戳(毫秒)</p></td>
-</tr>
-<tr class="row-odd"><td><p>.gmt_modified</p></td>
-<td><p>long</p></td>
-<td><p>修改时间戳(毫秒)</p></td>
-</tr>
-<tr class="row-even"><td><p>.product_id</p></td>
-<td><p>string</p></td>
-<td><p>产品的唯一id</p></td>
-</tr>
-<tr class="row-odd"><td><p>.product_key</p></td>
-<td><p>string</p></td>
-<td><p>产品key</p></td>
-</tr>
-<tr class="row-even"><td><p>.product_icon</p></td>
-<td><p>string</p></td>
-<td><p>产品图标地址</p></td>
-</tr>
-<tr class="row-odd"><td><p>.popular</p></td>
-<td><p>integer</p></td>
-<td><p>流行度, 0:一般; 1:热门;
-2:推荐</p></td>
-</tr>
-<tr class="row-even"><td><p>.owned</p></td>
+<tr class="row-odd"><td><p>.owned</p></td>
 <td><p>integer</p></td>
 <td><p>用户获取设备的方式,
 0:被分享的设备;
 1:拥有的设备</p></td>
 </tr>
-</tbody>
-</table>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
-</div>
-<div class="section" id="id3">
-<h2><em>绑定设备接口</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p><strong>请求URL：</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/bind</span></code></p></li>
-</ul>
-<p><strong>请求方式：</strong></p>
-<ul class="simple">
-<li><p>POST</p></li>
-</ul>
-<p><strong>请求示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>请求参数说明</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 37%" />
-<col style="width: 11%" />
-<col style="width: 17%" />
-<col style="width: 34%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
-<th class="head"><p>类型</p></th>
-<th class="head"><p>说明</p></th>
+<tr class="row-even"><td><p>.group_id</p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
+<tr class="row-odd"><td><p>.is_sub_device</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
-<tr class="row-odd"><td><p>device_id</p></td>
-<td><p>是</p></td>
+<tr class="row-even"><td><p>.product_id</p></td>
 <td><p>string</p></td>
-<td><p>设备的唯一id</p></td>
+<td><p>产品的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>device_key</p></td>
-<td><p>是</p></td>
+<tr class="row-odd"><td><p>.category_id</p></td>
 <td><p>string</p></td>
-<td><p>设备key</p></td>
+<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>device_secret</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备密钥</p></td>
+<tr class="row-even"><td><p>.properties</p></td>
+<td><p>object</p></td>
+<td><p>物模型, 和品类id配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>.gmt_bind</p></td>
+<td><p>long</p></td>
+<td><p>绑定时间戳(毫秒)</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>返回示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
-<span class="p">}</span>
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
 </div>
-<p><strong>返回数据说明</strong></p>
-<ul class="simple">
-<li><p>空值</p></li>
-</ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
 </div>
 <div class="section" id="id4">
-<h2><em>解绑设备接口</em><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2><em>更新设备基本信息接口</em><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/unbind</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/update_info</span></code></p></li>
 </ul>
 <p><strong>请求方式：</strong></p>
 <ul class="simple">
@@ -531,83 +565,14 @@
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>请求参数说明</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 12%" />
-<col style="width: 18%" />
-<col style="width: 35%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
-<th class="head"><p>类型</p></th>
-<th class="head"><p>说明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
-</tr>
-<tr class="row-odd"><td><p>device_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备的唯一id</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>返回示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>返回数据说明</strong></p>
-<ul class="simple">
-<li><p>空值</p></li>
-</ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
-</div>
-<div class="section" id="id5">
-<h2><em>更新设备信息接口</em><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<p><strong>请求URL：</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/update</span></code></p></li>
-</ul>
-<p><strong>请求方式：</strong></p>
-<ul class="simple">
-<li><p>POST</p></li>
-</ul>
-<p><strong>请求示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;update_model&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;sn&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;firmware_version&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{}</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -615,10 +580,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 9%" />
 <col style="width: 14%" />
-<col style="width: 48%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
+<col style="width: 73%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -638,73 +603,34 @@
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>update_model</p></td>
-<td><p>是</p></td>
+<tr class="row-even"><td><p>nick_name</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>owned</p></td>
+<td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>更新设备方式, 0:全部信息;
-1:设备密钥; 2:设备名称;
-3:设备序列号; 4:固件版本;
-5:物理地址; 6:网络地址;
-7:设备昵称; 8:具体属性</p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备,
+当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>device_secret</p></td>
+<tr class="row-even"><td><p>group_id</p></td>
 <td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备密钥, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，家ID、房间ID等, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>device_name</p></td>
+<tr class="row-odd"><td><p>is_sub_device</p></td>
 <td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备名称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>sn</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备序列号, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>firmware_version</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备固件版本, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">4</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>mac_addr</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备物理地址, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">5</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>net_addr</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备网络地址, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">6</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>nick_name</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">7</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>properties</p></td>
-<td><p>否</p></td>
-<td><p>object</p></td>
-<td><p>具体属性对象, 当
-<code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或
-<code class="docutils literal notranslate"><span class="pre">8</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）
+, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">4</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>返回示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
 <span class="p">}</span>
@@ -714,13 +640,13 @@
 <ul class="simple">
 <li><p>空值</p></li>
 </ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
 </div>
-<div class="section" id="id6">
-<h2><em>查询设备接口</em><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id5">
+<h2><em>查询设备接口</em><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/query</span></code></p></li>
@@ -732,11 +658,10 @@
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;query_model&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span>
+        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -762,49 +687,34 @@
 <td><p>string</p></td>
 <td><p>访问token</p></td>
 </tr>
-<tr class="row-odd"><td><p>query_model</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>查询方式, 0:设备id; 1:设备key</p></td>
-</tr>
-<tr class="row-even"><td><p>device_id</p></td>
+<tr class="row-odd"><td><p>device_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
 <td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>device_key</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备key, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
-</tr>
 </tbody>
 </table>
 <p><strong>返回示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
         <span class="nt">&quot;device_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;sn&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;firmware_version&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;modifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-        <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
+        <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;product_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;product_key&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;product_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;https:/www.a.com/1.jpg&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;popular&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;gmt_bind&quot;</span><span class="p">:</span> <span class="mi">149968121600</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -812,9 +722,9 @@
 <p><strong>返回数据说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 14%" />
-<col style="width: 59%" />
+<col style="width: 16%" />
+<col style="width: 10%" />
+<col style="width: 74%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -827,91 +737,79 @@
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>device_key</p></td>
-<td><p>string</p></td>
-<td><p>设备key</p></td>
-</tr>
-<tr class="row-even"><td><p>device_secret</p></td>
+<tr class="row-odd"><td><p>device_secret</p></td>
 <td><p>string</p></td>
 <td><p>设备密钥</p></td>
-</tr>
-<tr class="row-odd"><td><p>device_name</p></td>
-<td><p>string</p></td>
-<td><p>设备名称</p></td>
-</tr>
-<tr class="row-even"><td><p>sn</p></td>
-<td><p>string</p></td>
-<td><p>设备序列号</p></td>
-</tr>
-<tr class="row-odd"><td><p>firmware_version</p></td>
-<td><p>string</p></td>
-<td><p>设备固件版本</p></td>
 </tr>
 <tr class="row-even"><td><p>mac_addr</p></td>
 <td><p>string</p></td>
 <td><p>设备物理地址</p></td>
 </tr>
-<tr class="row-odd"><td><p>net_addr</p></td>
+<tr class="row-odd"><td><p>sdk_version</p></td>
 <td><p>string</p></td>
-<td><p>设备网络地址</p></td>
+<td><p>SDK版本</p></td>
 </tr>
-<tr class="row-even"><td><p>nick_name</p></td>
+<tr class="row-even"><td><p>version</p></td>
+<td><p>string</p></td>
+<td><p>设备固件版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>nick_name</p></td>
 <td><p>string</p></td>
 <td><p>设备昵称</p></td>
 </tr>
-<tr class="row-odd"><td><p>properties</p></td>
-<td><p>object</p></td>
-<td><p>具体属性对象</p></td>
+<tr class="row-even"><td><p>net_addr</p></td>
+<td><p>string</p></td>
+<td><p>设备网络地址</p></td>
 </tr>
-<tr class="row-even"><td><p>status</p></td>
+<tr class="row-odd"><td><p>status</p></td>
 <td><p>integer</p></td>
-<td><p>设备状态, 0:未激活; 1:在线; 2:离线;
-3:禁用; 4:已激活</p></td>
+<td><p>设备状态, 0:未激活;
+1:在线; 2:离线; 3:禁用;
+4:已激活</p></td>
 </tr>
-<tr class="row-odd"><td><p>creator</p></td>
-<td><p>string</p></td>
-<td><p>创建者id</p></td>
+<tr class="row-even"><td><p>owned</p></td>
+<td><p>integer</p></td>
+<td><p>用户获取设备的方式,
+0:被分享的设备;
+1:拥有的设备</p></td>
 </tr>
-<tr class="row-even"><td><p>modifier</p></td>
-<td><p>string</p></td>
-<td><p>修改者id</p></td>
+<tr class="row-odd"><td><p>group_id</p></td>
+<td><p>integer</p></td>
+<td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
-<tr class="row-odd"><td><p>gmt_create</p></td>
-<td><p>long</p></td>
-<td><p>创建时间戳(毫秒)</p></td>
-</tr>
-<tr class="row-even"><td><p>gmt_modified</p></td>
-<td><p>long</p></td>
-<td><p>修改时间戳(毫秒)</p></td>
+<tr class="row-even"><td><p>is_sub_device</p></td>
+<td><p>boolean</p></td>
+<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
 <tr class="row-odd"><td><p>product_id</p></td>
 <td><p>string</p></td>
 <td><p>产品的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>product_key</p></td>
+<tr class="row-even"><td><p>category_id</p></td>
 <td><p>string</p></td>
-<td><p>产品key</p></td>
+<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>product_icon</p></td>
-<td><p>string</p></td>
-<td><p>产品图标地址</p></td>
+<tr class="row-odd"><td><p>properties</p></td>
+<td><p>object</p></td>
+<td><p>物模型, 和品类id配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>popular</p></td>
-<td><p>integer</p></td>
-<td><p>流行度, 0:一般; 1:热门; 2:推荐</p></td>
+<tr class="row-even"><td><p>gmt_bind</p></td>
+<td><p>long</p></td>
+<td><p>绑定时间戳(毫秒)</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
 </div>
-<div class="section" id="id7">
-<h2><em>更新设备记录接口</em><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2><em>查询设备状态接口</em><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/update_record</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/query_status</span></code></p></li>
 </ul>
 <p><strong>请求方式：</strong></p>
 <ul class="simple">
@@ -920,157 +818,82 @@
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;record_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;update_model&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>请求参数说明</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>必选</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>是</p></td>
+<td><p>string</p></td>
+<td><p>访问token</p></td>
+</tr>
+<tr class="row-odd"><td><p>device_id</p></td>
+<td><p>否</p></td>
+<td><p>string</p></td>
+<td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
+为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>请求参数说明</strong></p>
+<p><strong>返回数据说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 18%" />
-<col style="width: 15%" />
-<col style="width: 44%" />
+<col style="width: 19%" />
+<col style="width: 21%" />
+<col style="width: 60%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
 <th class="head"><p>类型</p></th>
 <th class="head"><p>说明</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
-</tr>
-<tr class="row-odd"><td><p>record_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>记录的唯一id</p></td>
-</tr>
-<tr class="row-even"><td><p>update_model</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>更新设备记录方式, 0:全部;
-1:记录等级; 2:记录状态</p></td>
-</tr>
-<tr class="row-odd"><td><p>level</p></td>
-<td><p>否</p></td>
-<td><p>integer</p></td>
-<td><p>当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code>
-, 记录的严重等级,
-0:普通(info);
-1:警告(waring);
-2:严重(fatal);</p></td>
-</tr>
 <tr class="row-even"><td><p>status</p></td>
-<td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code>
-, 记录的状态, 0:全部;
-1:可用; 2:归档; 3:未读;
-4:已读</p></td>
+<td><p>设备状态, 0:未激活;
+1:在线; 2:离线; 3:禁用;
+4:已激活</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>返回示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
-<span class="p">}</span>
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
 </div>
-<p><strong>返回数据说明</strong></p>
-<ul class="simple">
-<li><p>空值</p></li>
-</ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
 </div>
-<div class="section" id="id8">
-<h2><em>删除设备记录接口</em><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
-<p><strong>请求URL：</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/delete_record</span></code></p></li>
-</ul>
-<p><strong>请求方式：</strong></p>
-<ul class="simple">
-<li><p>POST</p></li>
-</ul>
-<p><strong>请求示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;record_id_list&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;53102fb4bf1044ed8b0ba36b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>请求参数说明</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 7%" />
-<col style="width: 11%" />
-<col style="width: 58%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
-<th class="head"><p>类型</p></th>
-<th class="head"><p>说明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
-</tr>
-<tr class="row-odd"><td><p>record_id_list</p></td>
-<td><p>是</p></td>
-<td><p>array</p></td>
-<td><p>记录id列表, 单次最多  <code class="docutils literal notranslate"><span class="pre">100</span></code>  条</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>返回示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
-    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="kc">null</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>返回数据说明</strong></p>
-<ul class="simple">
-<li><p>空值</p></li>
-</ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
-</div>
-<div class="section" id="id9">
-<h2><em>查询设备记录接口</em><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h2><em>查询设备事件接口</em><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/query_record</span></code></p></li>
@@ -1082,18 +905,17 @@
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;query_model&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;record_status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&quot;page_no&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-        <span class="nt">&quot;gmt_start&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-        <span class="nt">&quot;gmt_end&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
+        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
         <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
         <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;vendor_type&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="nt">&quot;event_type&quot;</span><span class="p">:</span> <span class="mi">0</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -1101,10 +923,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 9%" />
-<col style="width: 14%" />
-<col style="width: 53%" />
+<col style="width: 16%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 66%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -1122,108 +944,74 @@
 <tr class="row-odd"><td><p>query_model</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>查询方式, 0:设备id 1:用户id;
-2:品类id; 3:厂商类型</p></td>
+<td><p>查询方式, 0:设备id; 1:用户id;</p></td>
 </tr>
-<tr class="row-even"><td><p>record_status</p></td>
+<tr class="row-even"><td><p>page_no</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>记录的状态, 0:全部; 1:可用;
-2:归档; 3:未读; 4:已读</p></td>
+<td><p>当前页号, 从1开始</p></td>
 </tr>
-<tr class="row-odd"><td><p>page_no</p></td>
+<tr class="row-odd"><td><p>page_size</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
-<td><p>当前页号</p></td>
+<td><p>分页大小，大于等于1，小于等于100</p></td>
 </tr>
-<tr class="row-even"><td><p>page_size</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>页大小</p></td>
-</tr>
-<tr class="row-odd"><td><p>gmt_start</p></td>
+<tr class="row-even"><td><p>start</p></td>
 <td><p>否</p></td>
 <td><p>long</p></td>
 <td><p>查询历史开始时间戳,
 距离当前时间较远的时间戳</p></td>
 </tr>
-<tr class="row-even"><td><p>gmt_end</p></td>
+<tr class="row-odd"><td><p>end</p></td>
 <td><p>否</p></td>
 <td><p>long</p></td>
 <td><p>查询历史结束时间戳,
 距离当前时间较近的时间戳</p></td>
 </tr>
-<tr class="row-odd"><td><p>device_id</p></td>
+<tr class="row-even"><td><p>device_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code>
-为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>设备的唯一id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> , 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>user_id</p></td>
+<tr class="row-odd"><td><p>user_id</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
 <td><p>注册应用或用户的唯一id, 当
-<code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时
-<code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>category_id</p></td>
+<tr class="row-even"><td><p>event_type</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>品类id, 当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为
-<code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code> , 参考
-<code class="docutils literal notranslate"><span class="pre">公共参数说明-产品类型表</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>vendor_type</p></td>
-<td><p>否</p></td>
-<td><p>integer</p></td>
-<td><p>当 <code class="docutils literal notranslate"><span class="pre">query_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时
-<code class="docutils literal notranslate"><span class="pre">必填</span></code> , 设备厂商类型,
-0:正泰自研; 1:飞燕生态</p></td>
+<td><p>事件类型, 不填时为所有, 0:属性上报; 1:故障及系统上报;</p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>返回示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;error_code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
     <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
         <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
         <span class="nt">&quot;page_no&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-        <span class="nt">&quot;record_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="nt">&quot;events_list&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="nt">&quot;record_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81917&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81916&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;modifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
-                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;vendor_type&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81916&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;event_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81917&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;event_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+                <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span>
             <span class="p">},</span>
             <span class="p">{</span>
-                <span class="nt">&quot;record_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81917&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81916&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;device_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;modifier&quot;</span><span class="p">:</span> <span class="s2">&quot;1bd5d003-31b9-476f-ad03-71d471922820&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span><span class="p">,</span>
-                <span class="nt">&quot;gmt_modified&quot;</span><span class="p">:</span> <span class="mi">1499681216000</span><span class="p">,</span>
-                <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;vendor_type&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81916&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;event_id&quot;</span><span class="p">:</span> <span class="s2">&quot;5124b5d86041c7dca81917&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;event_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+                <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;gmt_create&quot;</span><span class="p">:</span> <span class="mi">1499681215000</span>
             <span class="p">}</span>
         <span class="p">]</span>
     <span class="p">}</span>
@@ -1233,9 +1021,9 @@
 <p><strong>返回数据说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 14%" />
-<col style="width: 64%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 75%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -1250,95 +1038,61 @@
 </tr>
 <tr class="row-odd"><td><p>page_no</p></td>
 <td><p>integer</p></td>
-<td><p>当前页号</p></td>
+<td><p>当前页号, 从1开始</p></td>
 </tr>
 <tr class="row-even"><td><p>page_size</p></td>
 <td><p>integer</p></td>
-<td><p>页大小</p></td>
+<td><p>分页大小，大于等于1，小于等于100</p></td>
 </tr>
-<tr class="row-odd"><td><p>record_list</p></td>
+<tr class="row-odd"><td><p>events_list</p></td>
 <td><p>array</p></td>
-<td><p>记录列表</p></td>
-</tr>
-<tr class="row-even"><td><p>.record_id</p></td>
-<td><p>string</p></td>
-<td><p>当条记录的唯一id</p></td>
-</tr>
-<tr class="row-odd"><td><p>.user_id</p></td>
-<td><p>string</p></td>
-<td><p>用户的唯一id</p></td>
+<td><p>事件列表</p></td>
 </tr>
 <tr class="row-even"><td><p>.device_id</p></td>
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>.device_name</p></td>
+<tr class="row-odd"><td><p>.user_id</p></td>
 <td><p>string</p></td>
-<td><p>设备名称</p></td>
+<td><p>用户的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>.nick_name</p></td>
+<tr class="row-even"><td><p>.event_id</p></td>
 <td><p>string</p></td>
-<td><p>设备昵称</p></td>
+<td><p>当条事件的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>.level</p></td>
+<tr class="row-odd"><td><p>.event_type</p></td>
 <td><p>integer</p></td>
-<td><p>记录的严重等级, 0:普通(info);
-1:警告(waring); 3:严重(error);</p></td>
+<td><p>事件类型, 0:属性上报(info); 1:系统上报(waring) 2:故障上报(error);</p></td>
 </tr>
-<tr class="row-even"><td><p>.title</p></td>
-<td><p>string</p></td>
-<td><p>记录的命名</p></td>
+<tr class="row-even"><td><p>.properties</p></td>
+<td><p>object</p></td>
+<td><p>物模型, 和品类id配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>.body</p></td>
-<td><p>string</p></td>
-<td><p>记录的具体内容</p></td>
-</tr>
-<tr class="row-even"><td><p>.status</p></td>
+<tr class="row-odd"><td><p>.code</p></td>
 <td><p>integer</p></td>
-<td><p>记录的状态, 0:全部; 1:可用; 2:归档;
-3:未读; 4:已读</p></td>
+<td><p>参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>.creator</p></td>
-<td><p>string</p></td>
-<td><p>创建者id</p></td>
-</tr>
-<tr class="row-even"><td><p>.modifier</p></td>
-<td><p>string</p></td>
-<td><p>修改者id</p></td>
-</tr>
-<tr class="row-odd"><td><p>.gmt_create</p></td>
+<tr class="row-even"><td><p>.gmt_create</p></td>
 <td><p>long</p></td>
 <td><p>创建时间戳(毫秒)</p></td>
 </tr>
-<tr class="row-even"><td><p>.gmt_modified</p></td>
-<td><p>long</p></td>
-<td><p>修改时间戳(毫秒)</p></td>
-</tr>
-<tr class="row-odd"><td><p>.category_id</p></td>
-<td><p>integer</p></td>
-<td><p>品类id, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-产品类型表</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>.vendor_type</p></td>
-<td><p>integer</p></td>
-<td><p>设备厂商类型, 0:正泰自研; 1:飞燕生态</p></td>
-</tr>
 </tbody>
 </table>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">error_code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明</span></code></p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">message_id</span></code> 和 <code class="docutils literal notranslate"><span class="pre">code</span></code> 参见 <code class="docutils literal notranslate"><span class="pre">公共参数说明-参数列表</span></code></p>
 </div>
-<div class="section" id="id10">
-<h2><em>飞燕平台-设备数据实时接受</em><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id8">
+<h2><em>飞燕平台-设备数据实时接受</em><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <p><strong>请求URL：</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://api.chintsmart.com/device/aliyun_living/realtime_data</span></code></p></li>
 </ul>
-<p><strong>备注</strong></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://living.aliyun.com/doc?spm=a2c56.196102.1029312.1.52f425c86lbmit#wbtylu.html">飞燕平台-设备数据实时发送文档</a></p></li>
-</ul>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p><a class="reference external" href="https://living.aliyun.com/doc?spm=a2c56.196102.1029312.1.52f425c86lbmit#wbtylu.html">飞燕平台-设备数据实时发送文档</a></p>
+</div>
 </div>
 </div>
 
@@ -1348,8 +1102,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="product-service.html" class="btn btn-neutral float-left" title="产品管理" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../common-parameters/param-list.html" class="btn btn-neutral float-right" title="参数列表" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="product-service.html" class="btn btn-neutral float-left" title="产品服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="message-service/index.html" class="btn btn-neutral float-right" title="消息服务" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
