@@ -580,10 +580,10 @@
 <p><strong>请求参数说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 5%" />
-<col style="width: 8%" />
-<col style="width: 73%" />
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 70%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
@@ -606,25 +606,23 @@
 <tr class="row-even"><td><p>nick_name</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
-<td><p>设备昵称, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>设备昵称</p></td>
 </tr>
 <tr class="row-odd"><td><p>owned</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备,
-当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">2</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
 </tr>
 <tr class="row-even"><td><p>group_id</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
-<td><p>要查询的空间，家ID、房间ID等, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">3</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+<td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
 <tr class="row-odd"><td><p>is_sub_device</p></td>
 <td><p>否</p></td>
 <td><p>boolean</p></td>
 <td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
-取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）
-, 当 <code class="docutils literal notranslate"><span class="pre">update_model</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或 <code class="docutils literal notranslate"><span class="pre">4</span></code> 时 <code class="docutils literal notranslate"><span class="pre">必填</span></code></p></td>
+取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
 </tbody>
 </table>

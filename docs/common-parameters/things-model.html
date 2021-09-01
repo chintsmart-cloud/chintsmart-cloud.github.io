@@ -98,7 +98,6 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">物模型</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">品类表</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3"><em>0 开关</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"><em>1 插座</em></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="param-list.html">参数列表</a></li>
@@ -241,302 +240,105 @@
 <div class="section" id="id3">
 <h2><em>0 开关</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p><strong>请求示例</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
-    &quot;category_id&quot;: 0,
-    &quot;properties&quot;: {
-        // no required 进入睡眠等待时间
-        &quot;enterSleepAfterTime&quot;: {
-            &quot;min&quot;: &quot;0&quot;,
-            &quot;max&quot;: &quot;65535&quot;
-            // &quot;unitName&quot;: &quot;秒&quot;,
-            // &quot;step&quot;: &quot;1&quot;,
-            // &quot;defaultValue&quot;: &quot;0&quot;
-        },
-
-        // no required 开关
-        &quot;powerstate&quot;: true,
-
-        // no required 激活设备唤醒时间
-        &quot;activeWakeupTime&quot;: {
-            &quot;min&quot;: &quot;0&quot;,
-            &quot;max&quot;: &quot;65535&quot;,
-            // &quot;unit&quot;: &quot;s&quot;,
-            // &quot;unitName&quot;: &quot;秒&quot;,
-            // &quot;step&quot;: &quot;1&quot;,
-            // &quot;defaultValue&quot;: &quot;5&quot;
-        },
-
-        // no required 设备端上定时
-        &quot;device_timer&quot;: {
-            // 定时开始时间
-            &quot;timer&quot;: &quot;&quot;,
-            &quot;enable&quot;: true,
-            // 定时执行的操作
-            &quot;targets&quot;: &quot;&quot;,
-            &quot;time_zone&quot;: {
-                &quot;min&quot;: &quot;-43200&quot;,
-                &quot;max&quot;: &quot;50400&quot;,
-                &quot;unit&quot;: &quot;s&quot;,
-                &quot;unitName&quot;: &quot;秒&quot;,
-                &quot;step&quot;: &quot;1&quot;,
-                &quot;defaultValue&quot;: &quot;0&quot;
-            },
-            // &quot;0&quot;: &quot;未配置&quot;,
-            // &quot;1&quot;: &quot;倒计时&quot;,
-            // &quot;2&quot;: &quot;普通定时&quot;,
-            // &quot;3&quot;: &quot;周期循环定时&quot;,
-            // &quot;4&quot;: &quot;随机定时&quot;
-            &quot;type&quot;: 0,
-            &quot;end_time&quot;: &quot;&quot;,
-            &quot;run_time&quot;: {
-                &quot;min&quot;: &quot;0&quot;,
-                &quot;max&quot;: &quot;1440&quot;,
-                &quot;unit&quot;: &quot;m&quot;,
-                &quot;unitName&quot;: &quot;分钟&quot;,
-                &quot;step&quot;: &quot;1&quot;,
-                &quot;defaultValue&quot;: &quot;0&quot;
-            },
-            &quot;sleep_time&quot;: {
-                &quot;min&quot;: &quot;0&quot;,
-                &quot;max&quot;: &quot;1440&quot;,
-                &quot;unit&quot;: &quot;m&quot;,
-                &quot;unitName&quot;: &quot;分钟&quot;,
-                &quot;step&quot;: &quot;1&quot;,
-                &quot;defaultValue&quot;: &quot;0&quot;
-            }
-        },
-
-        // no required 模式
-        // &quot;3&quot;: &quot;阅读模式&quot;,
-        // &quot;8&quot;: &quot;起床模式&quot;,
-        // &quot;230&quot;: &quot;节能模式&quot;,
-        // &quot;378&quot;: &quot;休闲模式&quot;,
-        // &quot;395&quot;: &quot;会客模式&quot;,
-        // &quot;751&quot;: &quot;全开模式&quot;,
-        // &quot;982&quot;: &quot;回家模式&quot;,
-        // &quot;983&quot;: &quot;离家模式&quot;,
-        // &quot;984&quot;: &quot;安防模式&quot;,
-        // &quot;985&quot;: &quot;解除安防&quot;
-        &quot;mode&quot;: 3,
-
-        // no required 发射功率
-        &quot;transmissionPower&quot;: {
-            &quot;min&quot;: &quot;0&quot;,
-            &quot;max&quot;: &quot;100&quot;,
-            &quot;unit&quot;: &quot;none&quot;,
-            &quot;unitName&quot;: &quot;无&quot;,
-            &quot;step&quot;: &quot;1&quot;,
-            &quot;defaultValue&quot;: &quot;0&quot;
-        }
-
-
-
-    }
-}
-</pre></div>
-</div>
-<p><strong>请求参数说明</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 6%" />
-<col style="width: 9%" />
-<col style="width: 68%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
-<th class="head"><p>类型</p></th>
-<th class="head"><p>说明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
-</tr>
-<tr class="row-odd"><td><p>device_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备的唯一id</p></td>
-</tr>
-<tr class="row-even"><td><p>device_secret</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备密钥</p></td>
-</tr>
-<tr class="row-odd"><td><p>mac_addr</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备物理地址</p></td>
-</tr>
-<tr class="row-even"><td><p>sdk_version</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>SDK版本</p></td>
-</tr>
-<tr class="row-odd"><td><p>firmware_version</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备固件版本</p></td>
-</tr>
-<tr class="row-even"><td><p>nick_name</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-odd"><td><p>net_addr</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备网络地址</p></td>
-</tr>
-<tr class="row-even"><td><p>status</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
-</tr>
-<tr class="row-odd"><td><p>group_id</p></td>
-<td><p>否</p></td>
-<td><p>integer</p></td>
-<td><p>要查询的空间，如家ID、房间ID等</p></td>
-</tr>
-<tr class="row-even"><td><p>is_sub_device</p></td>
-<td><p>否</p></td>
-<td><p>boolean</p></td>
-<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
-取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
-</tr>
-<tr class="row-odd"><td><p>owned</p></td>
-<td><p>否</p></td>
-<td><p>integer</p></td>
-<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
-</tr>
-<tr class="row-even"><td><p>product_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>产品的唯一id</p></td>
-</tr>
-<tr class="row-odd"><td><p>category_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="id4">
-<h2><em>1 插座</em><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;PowerSwitch&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;TotalConsumption&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36a&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;RMSCurrent&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;RMSVoltage&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;CountDown&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;IsRunning&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;TimeLeft&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;max&quot;</span><span class="p">:</span> <span class="mi">86399</span><span class="p">,</span>
-                <span class="nt">&quot;PowerSwitch&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;Timestamp&quot;</span><span class="p">:</span> <span class="mi">0</span>
-            <span class="p">}</span>
+        <span class="nt">&quot;0&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;timing_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="nt">&quot;repeat&quot;</span><span class="p">:</span> <span class="s2">&quot;everyday&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;8:30&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;23:30&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;after_seconds&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+                    <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;1&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;remaining&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+                    <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>请求参数说明</strong></p>
+<p><strong>属性说明</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 18%" />
-<col style="width: 6%" />
-<col style="width: 9%" />
-<col style="width: 68%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 71%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
 <th class="head"><p>类型</p></th>
 <th class="head"><p>说明</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>access_token</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>访问token</p></td>
-</tr>
-<tr class="row-odd"><td><p>device_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备的唯一id</p></td>
-</tr>
-<tr class="row-even"><td><p>device_secret</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备密钥</p></td>
-</tr>
-<tr class="row-odd"><td><p>mac_addr</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备物理地址</p></td>
-</tr>
-<tr class="row-even"><td><p>sdk_version</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>SDK版本</p></td>
-</tr>
-<tr class="row-odd"><td><p>firmware_version</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>设备固件版本</p></td>
-</tr>
-<tr class="row-even"><td><p>nick_name</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-odd"><td><p>net_addr</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备网络地址</p></td>
-</tr>
-<tr class="row-even"><td><p>status</p></td>
-<td><p>是</p></td>
-<td><p>integer</p></td>
-<td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
-</tr>
-<tr class="row-odd"><td><p>group_id</p></td>
-<td><p>否</p></td>
-<td><p>integer</p></td>
-<td><p>要查询的空间，如家ID、房间ID等</p></td>
-</tr>
-<tr class="row-even"><td><p>is_sub_device</p></td>
-<td><p>否</p></td>
+<tr class="row-even"><td><p>power_state</p></td>
 <td><p>boolean</p></td>
-<td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
-取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
+<td><p>开关的状态, 开: <code class="docutils literal notranslate"><span class="pre">true</span></code> , 关: <code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>owned</p></td>
-<td><p>否</p></td>
+<tr class="row-odd"><td><p>timing_timer</p></td>
+<td><p>object</p></td>
+<td><p>定时器</p></td>
+</tr>
+<tr class="row-even"><td><p>.enable</p></td>
+<td><p>boolean</p></td>
+<td><p>定时器是否开启, 开: <code class="docutils literal notranslate"><span class="pre">true</span></code> : 开 , 关: <code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>.repeat</p></td>
+<td><p>string</p></td>
+<td><p>重复执行的方式, <code class="docutils literal notranslate"><span class="pre">once</span></code> : 执行一次; <code class="docutils literal notranslate"><span class="pre">everyday</span></code> : 每天执行;</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1,2,3,4,5,6,7</span></code> : 自定义时间，每个数代表星期的某一天</p></td>
+</tr>
+<tr class="row-odd"><td><p>.start</p></td>
+<td><p>object</p></td>
+<td><p>定时开始时间及操作</p></td>
+</tr>
+<tr class="row-even"><td><p>.end</p></td>
+<td><p>object</p></td>
+<td><p>定时结束时间及操作</p></td>
+</tr>
+<tr class="row-odd"><td><p>countdown_timer</p></td>
+<td><p>object</p></td>
+<td><p>倒计时定时器</p></td>
+</tr>
+<tr class="row-even"><td><p>.remaining</p></td>
 <td><p>integer</p></td>
-<td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
-</tr>
-<tr class="row-even"><td><p>product_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>产品的唯一id</p></td>
-</tr>
-<tr class="row-odd"><td><p>category_id</p></td>
-<td><p>是</p></td>
-<td><p>string</p></td>
-<td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
+<td><p>倒计时读秒, N秒后执行倒计时</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p><code class="docutils literal notranslate"><span class="pre">0</span></code> 和 <code class="docutils literal notranslate"><span class="pre">1</span></code> 指第一个和第二个开关，兼容了多控开关，若是单控开关则只需使用 <code class="docutils literal notranslate"><span class="pre">0</span></code> 即可</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p><code class="docutils literal notranslate"><span class="pre">power_state</span></code> 、 <code class="docutils literal notranslate"><span class="pre">timing_timer</span></code> 、 <code class="docutils literal notranslate"><span class="pre">countdown_timer</span></code> 均为 <code class="docutils literal notranslate"><span class="pre">可选</span></code> , 一旦使用, 则其子项都为 <code class="docutils literal notranslate"><span class="pre">必选</span></code></p>
+</div>
 </div>
 </div>
 
