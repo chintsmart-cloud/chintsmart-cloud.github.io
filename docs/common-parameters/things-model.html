@@ -241,40 +241,39 @@
 <h2><em>0 开关</em><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p><strong>请求示例</strong></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;category_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;0&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;timing_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                    <span class="nt">&quot;repeat&quot;</span><span class="p">:</span> <span class="s2">&quot;everyday&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="p">{</span>
-                        <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;8:30&quot;</span><span class="p">,</span>
-                        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
-                    <span class="p">},</span>
-                    <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="p">{</span>
-                        <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;23:30&quot;</span><span class="p">,</span>
-                        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">false</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;after_seconds&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+    <span class="nt">&quot;0&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;timing_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;repeat&quot;</span><span class="p">:</span> <span class="s2">&quot;everyday&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;8:30&quot;</span><span class="p">,</span>
                     <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+                <span class="p">},</span>
+                <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;timer&quot;</span><span class="p">:</span> <span class="s2">&quot;23:30&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">false</span>
                 <span class="p">}</span>
-            <span class="p">]</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;1&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&quot;remaining&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
-                    <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
-                <span class="p">}</span>
-            <span class="p">]</span>
-        <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;after_seconds&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+                <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;1&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;countdown_timer&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;remaining&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+                <span class="nt">&quot;power_state&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -297,35 +296,39 @@
 <td><p>boolean</p></td>
 <td><p>开关的状态, 开: <code class="docutils literal notranslate"><span class="pre">true</span></code> , 关: <code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>timing_timer</p></td>
+<tr class="row-odd"><td><p>nick_name</p></td>
+<td><p>string</p></td>
+<td><p>开关的昵称</p></td>
+</tr>
+<tr class="row-even"><td><p>timing_timer</p></td>
 <td><p>object</p></td>
 <td><p>定时器</p></td>
 </tr>
-<tr class="row-even"><td><p>.enable</p></td>
+<tr class="row-odd"><td><p>.enable</p></td>
 <td><p>boolean</p></td>
 <td><p>定时器是否开启, 开: <code class="docutils literal notranslate"><span class="pre">true</span></code> : 开 , 关: <code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>.repeat</p></td>
+<tr class="row-even"><td><p>.repeat</p></td>
 <td><p>string</p></td>
 <td><p>重复执行的方式, <code class="docutils literal notranslate"><span class="pre">once</span></code> : 执行一次; <code class="docutils literal notranslate"><span class="pre">everyday</span></code> : 每天执行;</p></td>
 </tr>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td></td>
 <td></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1,2,3,4,5,6,7</span></code> : 自定义时间，每个数代表星期的某一天</p></td>
 </tr>
-<tr class="row-odd"><td><p>.start</p></td>
+<tr class="row-even"><td><p>.start</p></td>
 <td><p>object</p></td>
 <td><p>定时开始时间及操作</p></td>
 </tr>
-<tr class="row-even"><td><p>.end</p></td>
+<tr class="row-odd"><td><p>.end</p></td>
 <td><p>object</p></td>
 <td><p>定时结束时间及操作</p></td>
 </tr>
-<tr class="row-odd"><td><p>countdown_timer</p></td>
+<tr class="row-even"><td><p>countdown_timer</p></td>
 <td><p>object</p></td>
 <td><p>倒计时定时器</p></td>
 </tr>
-<tr class="row-even"><td><p>.remaining</p></td>
+<tr class="row-odd"><td><p>.remaining</p></td>
 <td><p>integer</p></td>
 <td><p>倒计时读秒, N秒后执行倒计时</p></td>
 </tr>

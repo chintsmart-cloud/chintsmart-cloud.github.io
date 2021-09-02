@@ -200,7 +200,6 @@
         <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
         <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -258,43 +257,38 @@
 <td><p>string</p></td>
 <td><p>设备固件版本</p></td>
 </tr>
-<tr class="row-even"><td><p>nick_name</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-odd"><td><p>net_addr</p></td>
+<tr class="row-even"><td><p>net_addr</p></td>
 <td><p>否</p></td>
 <td><p>string</p></td>
 <td><p>设备网络地址</p></td>
 </tr>
-<tr class="row-even"><td><p>status</p></td>
+<tr class="row-odd"><td><p>status</p></td>
 <td><p>是</p></td>
 <td><p>integer</p></td>
 <td><p>设备状态, 0:未激活;  1:在线; 2:离线; 3:禁用;  4:已激活</p></td>
 </tr>
-<tr class="row-odd"><td><p>group_id</p></td>
+<tr class="row-even"><td><p>group_id</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
 <td><p>空间编号，如家ID、房间ID等</p></td>
 </tr>
-<tr class="row-even"><td><p>is_sub_device</p></td>
+<tr class="row-odd"><td><p>is_sub_device</p></td>
 <td><p>否</p></td>
 <td><p>boolean</p></td>
 <td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
 取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
-<tr class="row-odd"><td><p>owned</p></td>
+<tr class="row-even"><td><p>owned</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
 <td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
 </tr>
-<tr class="row-even"><td><p>product_id</p></td>
+<tr class="row-odd"><td><p>product_id</p></td>
 <td><p>是</p></td>
 <td><p>string</p></td>
 <td><p>产品的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>category_id</p></td>
+<tr class="row-even"><td><p>category_id</p></td>
 <td><p>是</p></td>
 <td><p>string</p></td>
 <td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
@@ -413,7 +407,6 @@
                 <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                 <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -500,48 +493,44 @@
 <td><p>string</p></td>
 <td><p>设备固件版本</p></td>
 </tr>
-<tr class="row-even"><td><p>.nick_name</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-odd"><td><p>.net_addr</p></td>
+<tr class="row-even"><td><p>.net_addr</p></td>
 <td><p>string</p></td>
 <td><p>设备网络地址</p></td>
 </tr>
-<tr class="row-even"><td><p>.status</p></td>
+<tr class="row-odd"><td><p>.status</p></td>
 <td><p>integer</p></td>
 <td><p>设备状态, 0:未激活;
 1:在线; 2:离线; 3:禁用;
 4:已激活</p></td>
 </tr>
-<tr class="row-odd"><td><p>.owned</p></td>
+<tr class="row-even"><td><p>.owned</p></td>
 <td><p>integer</p></td>
 <td><p>用户获取设备的方式,
 0:被分享的设备;
 1:拥有的设备</p></td>
 </tr>
-<tr class="row-even"><td><p>.group_id</p></td>
+<tr class="row-odd"><td><p>.group_id</p></td>
 <td><p>integer</p></td>
 <td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
-<tr class="row-odd"><td><p>.is_sub_device</p></td>
+<tr class="row-even"><td><p>.is_sub_device</p></td>
 <td><p>boolean</p></td>
 <td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
 取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
-<tr class="row-even"><td><p>.product_id</p></td>
+<tr class="row-odd"><td><p>.product_id</p></td>
 <td><p>string</p></td>
 <td><p>产品的唯一id</p></td>
 </tr>
-<tr class="row-odd"><td><p>.category_id</p></td>
+<tr class="row-even"><td><p>.category_id</p></td>
 <td><p>string</p></td>
 <td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>.properties</p></td>
+<tr class="row-odd"><td><p>.properties</p></td>
 <td><p>object</p></td>
 <td><p>物模型, 和品类id配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>.gmt_bind</p></td>
+<tr class="row-even"><td><p>.gmt_bind</p></td>
 <td><p>long</p></td>
 <td><p>绑定时间戳(毫秒)</p></td>
 </tr>
@@ -569,7 +558,6 @@
     <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="s2">&quot;53102fb4bf1044ed8b0ba36c&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&quot;group_id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;is_sub_device&quot;</span><span class="p">:</span> <span class="kc">false</span>
@@ -603,22 +591,17 @@
 <td><p>string</p></td>
 <td><p>设备的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>nick_name</p></td>
-<td><p>否</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-odd"><td><p>owned</p></td>
+<tr class="row-even"><td><p>owned</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
 <td><p>用户获取设备的方式, 0:被分享的设备; 1:拥有的设备</p></td>
 </tr>
-<tr class="row-even"><td><p>group_id</p></td>
+<tr class="row-odd"><td><p>group_id</p></td>
 <td><p>否</p></td>
 <td><p>integer</p></td>
 <td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
-<tr class="row-odd"><td><p>is_sub_device</p></td>
+<tr class="row-even"><td><p>is_sub_device</p></td>
 <td><p>否</p></td>
 <td><p>boolean</p></td>
 <td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
@@ -703,7 +686,6 @@
         <span class="nt">&quot;mac_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;sdk_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
         <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;net_addr&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&quot;owned&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -751,48 +733,44 @@
 <td><p>string</p></td>
 <td><p>设备固件版本</p></td>
 </tr>
-<tr class="row-odd"><td><p>nick_name</p></td>
-<td><p>string</p></td>
-<td><p>设备昵称</p></td>
-</tr>
-<tr class="row-even"><td><p>net_addr</p></td>
+<tr class="row-odd"><td><p>net_addr</p></td>
 <td><p>string</p></td>
 <td><p>设备网络地址</p></td>
 </tr>
-<tr class="row-odd"><td><p>status</p></td>
+<tr class="row-even"><td><p>status</p></td>
 <td><p>integer</p></td>
 <td><p>设备状态, 0:未激活;
 1:在线; 2:离线; 3:禁用;
 4:已激活</p></td>
 </tr>
-<tr class="row-even"><td><p>owned</p></td>
+<tr class="row-odd"><td><p>owned</p></td>
 <td><p>integer</p></td>
 <td><p>用户获取设备的方式,
 0:被分享的设备;
 1:拥有的设备</p></td>
 </tr>
-<tr class="row-odd"><td><p>group_id</p></td>
+<tr class="row-even"><td><p>group_id</p></td>
 <td><p>integer</p></td>
 <td><p>要查询的空间，家ID、房间ID等</p></td>
 </tr>
-<tr class="row-even"><td><p>is_sub_device</p></td>
+<tr class="row-odd"><td><p>is_sub_device</p></td>
 <td><p>boolean</p></td>
 <td><p>是否为子设备。归属在某一个网关设备下的设备表示为子设备。
 取值为：true （表示获取子设备列表）；false （表示获取直连设备列表）</p></td>
 </tr>
-<tr class="row-odd"><td><p>product_id</p></td>
+<tr class="row-even"><td><p>product_id</p></td>
 <td><p>string</p></td>
 <td><p>产品的唯一id</p></td>
 </tr>
-<tr class="row-even"><td><p>category_id</p></td>
+<tr class="row-odd"><td><p>category_id</p></td>
 <td><p>string</p></td>
 <td><p>品类id, 和物模型配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>properties</p></td>
+<tr class="row-even"><td><p>properties</p></td>
 <td><p>object</p></td>
 <td><p>物模型, 和品类id配对, 参考 <code class="docutils literal notranslate"><span class="pre">公共参数说明-物模型</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>gmt_bind</p></td>
+<tr class="row-odd"><td><p>gmt_bind</p></td>
 <td><p>long</p></td>
 <td><p>绑定时间戳(毫秒)</p></td>
 </tr>
