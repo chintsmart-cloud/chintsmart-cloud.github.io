@@ -4,6 +4,7 @@ source/
 docs/_sources/
 Makefile
 make.bat
+.vscode
 
 # temp file
 *.log
